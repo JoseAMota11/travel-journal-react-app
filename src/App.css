@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav{
+  width: 100%;
+  height: 55px;
+  background-color: #F55A5A;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container{
+  width: 660px;
+  display: flex;
+  padding: 40px;
+  gap: 20px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.picture{
+  width: calc(125px * 1.8);
+  height: calc(168px * 1.8);
+  border-radius: 5px;
+}
+
+.ubication{
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.ubication img{
+  width: 8px;
+  margin-right: 4px;
+}
+
+.ubication span{
+  text-transform: uppercase;
+  color: #2B283A;
+  letter-spacing: 1.5px;
+  margin-right: 16px;
+}
+
+.ubication a{
+  color: #918E9B;
+}
+
+h2{
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+h3{
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+p{
+  font-size: 12px;
+}
+
+hr{
+  border-color: #fff;
+  
+}
+
+.line{
+  width: 580px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+@media only screen and (max-width: 700px){
+  .container{
+    width: 510px;
+    padding: 25px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 500px){
+  .container{
+    width: 480px;
+    padding: 20px;
   }
 }
